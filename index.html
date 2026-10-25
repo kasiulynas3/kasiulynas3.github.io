@@ -14,9 +14,16 @@
   main { max-width: 640px; text-align: center; }
   h1 { font-size: 44px; margin: 16px 0 4px; letter-spacing: -0.5px; }
   h1 span { color: var(--lime); }
+  h2 { font-size: 20px; margin: 40px 0 8px; }
   .tag { color: var(--lime); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; }
   a { color: var(--lime); }
-  footer { margin-top: 32px; font-size: 14px; opacity: 0.75; }
+  .yt { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; border-radius: 999px;
+        background: #fff; color: #0f0f0f; font-weight: 600; text-decoration: none; }
+  .yt svg { width: 28px; height: 20px; }
+  .tool { margin-top: 36px; padding: 20px; border: 1px solid rgba(243,233,220,0.2); border-radius: 12px; text-align: left; }
+  .tool p { margin: 8px 0; }
+  footer { margin-top: 32px; font-size: 14px; opacity: 0.85; }
+  footer a { margin: 0 8px; }
 </style>
 </head>
 <body>
@@ -24,8 +31,17 @@
   <h1>VelvetMoose<span>47</span></h1>
   <p class="tag">Velvet antlers. Zero chill.</p>
   <p>VelvetMoose47 is a YouTube channel of unhinged streamer moments, counted down to #1. All clips credit their original creators.</p>
-  <p><a href="https://www.youtube.com/@VelvetMoose47">Watch on YouTube</a></p>
-  <footer><a href="privacy.html">Privacy policy</a></footer>
+  <p><a class="yt" href="https://www.youtube.com/@VelvetMoose47">
+    <svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>
+    Watch on YouTube</a></p>
+
+  <section class="tool">
+    <h2 style="margin-top:0">VelvetMoose47 Uploader</h2>
+    <p>VelvetMoose47 Uploader is the channel's own private publishing tool. It uses <strong>YouTube API Services</strong> to upload the channel's finished Shorts, set their thumbnails and schedule their release. It only works with the VelvetMoose47 channel and is not offered to anyone else.</p>
+    <p>By using it, you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  </section>
+
+  <footer><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a></footer>
 </main>
 </body>
 </html>
